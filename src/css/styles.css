@@ -1,0 +1,10 @@
+.container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto
+}
+.header h1{ font: 30px "arial black" }

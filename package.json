@@ -1,0 +1,17 @@
+{
+  "name": "jogo-da-velha",
+  "version": "1.0.0",
+  "description": "Jogo da Velha - Humano versus Robô",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Fernando Henriques",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.7.1"
+  }
+}
