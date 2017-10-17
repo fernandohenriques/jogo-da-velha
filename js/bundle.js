@@ -527,10 +527,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_utils_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__css_utils_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_styles_css__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_styles_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__css_styles_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_humanPlay_js__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_humanPlay_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__modules_humanPlay_js__);
 
 
 
-var tabuleiro = [ [],[],[] ];
+board = '';
+
+
+
+
+/* Events */
+var columns = document.querySelectorAll(".column");
+columns.forEach(function(column){ column.onclick = function(){ __WEBPACK_IMPORTED_MODULE_2__modules_humanPlay_js___default()(this.id); } });
 
 
 /***/ }),
@@ -573,7 +582,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".text-center{ text-align: center }\r\n", ""]);
+exports.push([module.i, ".flex {\r\n  display: -webkit-flex;\r\n  display: flex\r\n}\r\n.flex-column {\r\n  display: -webkit-flex;\r\n  display: flex;\r\n  -webkit-flex-flow: column;\r\n  flex-flow: column\r\n}\r\n.text-center{ text-align: center }\r\n", ""]);
 
 // exports
 
@@ -713,9 +722,32 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".container {\r\n    display: -webkit-flex;\r\n    display: flex;\r\n    -webkit-flex-flow: column;\r\n    flex-flow: column;\r\n    width: 70%;\r\n    height: 100%;\r\n    margin: 0 auto\r\n}\r\n.header h1{ font: 30px \"arial black\" }\r\n", ""]);
+exports.push([module.i, ".container {\r\n  width: 70%;\r\n  height: 100%;\r\n  margin: 0 auto\r\n}\r\n.header h1{ font: 30px \"arial black\" }\r\n.board {\r\n  height: 80%\r\n}\r\n.board .table {\r\n  width: 70%;\r\n  height: 100%;\r\n  margin: 0 auto\r\n}\r\n.board .table .line {\r\n  width: 100%;\r\n  height: 33.33333%\r\n}\r\n.board .table .line .column {\r\n  height: 100%;\r\n  width: 33.33333%\r\n}\r\n.line.one, .line.two{\r\n  border-bottom: 3px solid #333\r\n}\r\n.column.middle {\r\n  border-left: 3px solid #333;\r\n  border-right: 3px solid #333\r\n}\r\n", ""]);
 
 // exports
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+module.exports = function(columnId) {
+	console.log('cliquei');
+  console.log(columnId);
+
+  var x = parseInt(columnId.substr(1,1));
+  var y = parseInt(columnId.substr(2,1));
+
+  if(board[x][y] != undefined) {
+    alert("Posição inválida");
+    return false;
+  }
+
+  board[x][y] = "O";		// coloca a jogada do humano
+  //atualiza tabuleiro na tela
+
+  console.log(board);
+};
 
 
 /***/ })

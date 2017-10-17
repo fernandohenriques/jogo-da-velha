@@ -6,11 +6,29 @@
     <meta name="author" content="Fernando Henriques" />
   </head>
   <body>
-    <div class="container">
+    <div class="container flex-column">
       <div class="header text-center">
         <h1>Jogo da Velha - Humano vs. Robô</h1>
       </div>
-      <div class="board">1</div>
+      <div class="board">
+        <div class="table flex-column">
+          <div class="line one flex">
+            <div id="p11" class="column"></div>
+            <div id="p12" class="column middle"></div>
+            <div id="p13" class="column"></div>
+          </div>
+          <div class="line two flex">
+            <div id="p21" class="column"></div>
+            <div id="p22" class="column middle"></div>
+            <div id="p23" class="column"></div>
+          </div>
+          <div class="line flex">
+            <div id="p31" class="column"></div>
+            <div id="p32" class="column middle"></div>
+            <div id="p33" class="column"></div>
+          </div>
+        </div>
+      </div>
       <div class="interface">1</div>
     </div>
 

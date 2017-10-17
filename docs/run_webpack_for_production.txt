@@ -1,5 +1,5 @@
 $ set NODE_ENV=1
-$ webpack
+$ npm run build
 
 
 
@@ -8,4 +8,4 @@ $ webpack
 For development again:
 
 $ set NODE_ENV=0
-$ webpack
+$ npm run build
