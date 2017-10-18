@@ -1,11 +1,18 @@
 import '../css/utils.css';
 import '../css/styles.css';
+import '../css/external/sweetalert.min.css';
 
-board = '';
+import './external/sweetalert.min.js';
 
+window.board = [ [],[],[] ];
+window.symbol = {'human':'O','cpu':'X'}; //default
+
+import game from './modules/game.js';
+import cpuPlay from './modules/cpuPlay.js';
 import humanPlay from './modules/humanPlay.js';
 
 
 /* Events */
-var columns = document.querySelectorAll(".column");
-columns.forEach(function(column){ column.onclick = function(){ humanPlay(this.id); } });
+document.querySelectorAll(".column").forEach(function(column){
+  column.onclick = function(){ humanPlay(this.id,game,cpuPlay); }
+});

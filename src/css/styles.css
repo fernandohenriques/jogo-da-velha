@@ -1,9 +1,10 @@
+body{ font-family: "arial black" }
 .container {
   width: 70%;
   height: 100%;
   margin: 0 auto
 }
-.header h1{ font: 30px "arial black" }
+.header h1{ font: 30px }
 .board {
   height: 80%
 }
@@ -18,7 +19,9 @@
 }
 .board .table .line .column {
   height: 100%;
-  width: 33.33333%
+  width: 33.33333%;
+  padding: 4px 0;
+  font-size: 60px
 }
 .line.one, .line.two{
   border-bottom: 3px solid #333
