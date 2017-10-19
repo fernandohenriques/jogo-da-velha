@@ -18,8 +18,9 @@ Tecnologias utilizadas:
 
 - Instruções:
   - Para alternar o "build" entre Development e Production:
-      $ set NODE_ENV=0
-      $ npm run build
-
-      $ set NODE_ENV=1
-      $ npm run build
+      DEV:
+        - $ set NODE_ENV=0
+        - $ npm run build
+      PROD:
+        - $ set NODE_ENV=1
+        - $ npm run build
