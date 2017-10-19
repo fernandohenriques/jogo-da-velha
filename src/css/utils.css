@@ -8,4 +8,6 @@
   -webkit-flex-flow: column;
   flex-flow: column
 }
-.text-center{ text-align: center }
+.text-center { text-align: center }
+.hand { cursor: pointer }
+.hide { display: none }

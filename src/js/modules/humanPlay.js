@@ -1,4 +1,4 @@
-module.exports = function(columnId,game,cpuPlay) {
+module.exports = function(columnId,game,cpuPlay,UI) {
   var x = parseInt(columnId.substr(1,1))-1;
   var y = parseInt(columnId.substr(2,1))-1;
 
@@ -7,10 +7,14 @@ module.exports = function(columnId,game,cpuPlay) {
     return false;
   }
 
-  board[x][y] = symbol.human;	//salva a jogada do humano
+  board[x][y] = symbol.human;
   game.updateBoard();
-  game.isLastTurn(board); //verifica se jogo acabou, se sim, trava novas jogadas
-    //se não, CPU joga
-
-  console.log(board);
+  if(game.isLastTurn(board)) { gameStatus.onGame = 0; gameStatus.holdBoard = 1; }
+  else {
+    if(!gameStatus.onGame) {
+      UI.toggleButtons();
+      gameStatus.onGame = 1;
+    }
+    cpuPlay(game,0,UI);
+  }
 };

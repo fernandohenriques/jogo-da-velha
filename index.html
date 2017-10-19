@@ -8,7 +8,7 @@
   <body>
     <div class="container flex-column">
       <div class="header text-center">
-        <h1>Jogo da Velha - Humano vs. Robô</h1>
+        <h1>Jogo da Velha - Humano <span id="humanSymbol"></span> vs. Robô <span id="cpuSymbol"></span></h1>
       </div>
       <div class="board">
         <div class="table flex-column">
@@ -29,7 +29,11 @@
           </div>
         </div>
       </div>
-      <div class="interface">1</div>
+      <div class="interface flex">
+        <div class="btn-default text-center hand symbol-change">Alterar Símbolo</div>
+        <div class="btn-default text-center hand cpu-start">CPU Começa</div>
+        <div class="btn-default text-center hand play-again hide">Jogar Novamente</div>
+      </div>
     </div>
 
     <script src="js/bundle.js"></script>

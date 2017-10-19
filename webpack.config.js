@@ -17,5 +17,5 @@ module.exports = {
         }
       ]
     },
-    plugins: isInProduction ? [new UglifyJSPlugin({compress: { warnings: false }})] : []
+    plugins: isInProduction ? [new UglifyJSPlugin()] : []
 };
