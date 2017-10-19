@@ -1,0 +1,52 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header h1 {
+      font-size: 22px
+  }
+  .board .table {
+    width: 90%;
+    margin-top: -20px
+  }
+  .btn-default {
+    font-size: 20px
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .header h1 {
+    font-size: 13px
+  }
+  .board .table {
+    width: 100%;
+    margin-top: -10px
+  }
+  .table .column, .column img {
+    padding-top: 0px
+  }
+  .btn-default {
+    padding-top: 15px;
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 480px){
+  .header h1 {
+      font-size: 13px
+  }
+  .board .table {
+    width: 100%;
+    margin-top: -10px
+  }
+  .column img {
+    padding-top: 0px;
+    width: 80px;
+    height: 80px
+  }
+  .btn-default{
+    padding-top: 14px;
+    font-size: 12px;
+    width: 42%
+  }
+}
+@media only screen and (max-width: 400px){
+  .column img {
+    padding-top: 40px
+  }
+}

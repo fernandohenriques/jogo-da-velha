@@ -1,5 +1,6 @@
 import '../css/utils.css';
 import '../css/styles.css';
+import '../css/responsive.css';
 import '../css/external/sweetalert.min.css';
 
 import './external/sweetalert.min.js';
