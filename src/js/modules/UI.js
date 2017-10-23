@@ -15,8 +15,8 @@ module.exports = {
       closeOnConfirm: false,
       inputPlaceholder: "O ou X"
     }, function (inputValue) {
-      inputValue = inputValue.toUpperCase();
       if (inputValue === false) return false;
+      inputValue = inputValue.toUpperCase();
       if (inputValue === "") {
           swal.showInputError("Digite um dos dois!");
           return false;

@@ -27,6 +27,9 @@
   }
 }
 @media only screen and (max-width: 480px){
+  .container {
+    width: 90%
+  }
   .header h1 {
       font-size: 13px
   }
@@ -35,7 +38,7 @@
     margin-top: -10px
   }
   .column img {
-    padding-top: 0px;
+    padding-top: 12%;
     width: 80px;
     height: 80px
   }
@@ -47,6 +50,6 @@
 }
 @media only screen and (max-width: 400px){
   .column img {
-    padding-top: 40px
+    padding-top: 18%
   }
 }
