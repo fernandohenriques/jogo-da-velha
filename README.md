@@ -8,11 +8,13 @@ Tecnologias utilizadas:
 - CSS 3;
 - JavaScript;
 
-- Module Bundler (gerenciamento de dependências, task runner...):
+- Gerenciamento de dependências:
+    - NPM
+- Module Bundler (and task runner...):
     - Webpack
 
 - Plugin JS para comunicação com usuário:
-    - Sweet Altert (http://t4t5.github.io/sweetalert/)
+    - Sweet Altert (https://lipis.github.io/bootstrap-sweetalert/)
 
 ******
 
