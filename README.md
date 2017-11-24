@@ -1,6 +1,8 @@
-#Joga da Velha. Humano versus Robô.
+# Joga da Velha. Humano versus Robô.
 
 Robô implementado segundo os conceitos do algoritmo MiniMax, que realiza uma busca competitiva do final para o começo da árvore de possibilidades, gerando um "valor de utilidade" para cada nó.
+
+***************************************************************************************************************
 
 Tecnologias utilizadas:
 
