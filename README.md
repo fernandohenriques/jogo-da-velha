@@ -1,11 +1,11 @@
-Joga da Velha. Humano versus Robô.
+#Joga da Velha. Humano versus Robô.
 
 Robô implementado segundo os conceitos do algoritmo MiniMax, que realiza uma busca competitiva do final para o começo da árvore de possibilidades, gerando um "valor de utilidade" para cada nó.
 
 Tecnologias utilizadas:
 
 - HTML 5;
-- CSS 3;
+- CSS 3 (com Flexbox);
 - JavaScript;
 
 - Gerenciamento de dependências:

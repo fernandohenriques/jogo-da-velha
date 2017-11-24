@@ -4,7 +4,7 @@ var isInProduction = JSON.parse(process.env.NODE_ENV || '0');
 module.exports = {
     entry: './src/js/app.js',
     output: {
-        filename: './js/bundle.js'
+        filename: '.public/js/app.js'
     },
     module: {
       rules: [
